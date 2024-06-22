@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_test/app/core/base/base_widget_mixin.dart';
+import 'package:flutter_web_test/app/core/widget/asset_image_view.dart';
 import 'package:get/get.dart';
-import 'package:getx_template/app/core/base/base_widget_mixin.dart';
-import 'package:getx_template/app/core/widget/asset_image_view.dart';
 
 import '/app/core/values/app_colors.dart';
 import '/app/core/values/app_values.dart';

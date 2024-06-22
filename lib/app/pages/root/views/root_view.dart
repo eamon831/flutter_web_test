@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_template/app/pages/home/views/home_view.dart';
+import 'package:flutter_web_test/app/pages/home/views/home_view.dart';
 
 import '/app/core/base/base_view.dart';
 import '/app/pages/root/controllers/root_controller.dart';

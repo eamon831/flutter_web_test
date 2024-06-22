@@ -10,11 +10,11 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const initial = Routes.main;
+  static const initial = Routes.root;
 
   static final routes = [
     GetPage(
-      name: _Paths.main,
+      name: _Paths.root,
       page: RootView.new,
       binding: RootBinding(),
     ),
