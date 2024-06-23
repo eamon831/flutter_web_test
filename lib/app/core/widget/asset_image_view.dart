@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -38,6 +39,18 @@ class AssetImageView extends StatelessWidget {
 
     switch (mimType) {
       case 'svg':
+        if (kIsWeb) {
+          return SvgPicture.asset(
+            'images/$fileName',
+            height: height,
+            width: width,
+            colorFilter: color == null
+                ? null
+                : ColorFilter.mode(color ?? Colors.black, BlendMode.srcIn),
+            fit: fit ?? BoxFit.contain,
+          );
+        }
+
         return SvgPicture.asset(
           path,
           height: height,
